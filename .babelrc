@@ -1,0 +1,29 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "loose": false,
+        "modules": false,
+        "useBuiltIns": "usage",
+        "corejs": 3,
+        "targets": {
+          "browsers": ["last 2 versions", "safari 7"]
+        }
+      }
+    ],
+    "@babel/react"
+  ],
+  "plugins": [
+    "@babel/proposal-optional-chaining",
+    ["@babel/proposal-class-properties", { "loose": true }],
+    [
+      "import",
+      {
+        "style": true,
+        "libraryName": "antd"
+      },
+      "antd"
+    ]
+  ]
+}
